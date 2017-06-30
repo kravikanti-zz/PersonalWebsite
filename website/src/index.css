@@ -1,0 +1,17 @@
+/* Three Main Fonts for Personal Website */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+@font-face {
+  font-family: Vegur;
+  src: url(./fonts/vegur.otf);
+}
+
+@font-face {
+  font-family: PlaylistScript;
+  src: url(./fonts/PlaylistScript.otf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

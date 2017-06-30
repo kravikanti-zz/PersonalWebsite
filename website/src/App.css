@@ -1,0 +1,122 @@
+.home-container {
+  text-align: center;
+  background: url("./images/main-background2.jpg") center;
+  background-size: cover;
+  width: 100%;
+  height: 650px;
+}
+
+.main-overlay {
+  background-color: #d6d7db;
+  position: relative;
+  opacity: 0.7;
+  width: 70%;
+  height: 50vmin;
+  right: -70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30vmin;
+  float: right;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: slide 1s forwards;
+  animation-delay: 0.5s;
+}
+
+.main-overlay:before {
+  background: #d6d7db;
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 25vmin;
+  transform: skewY(-4.5deg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10vmin;
+  float: right;
+}
+
+@-webkit-keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes slide {
+  100% {
+    right: 0;
+  }
+}
+
+.name {
+  font-family: 'Vegur';
+  opacity: 0;
+  position: relative;
+  margin: 0 auto;
+  font-size: 60px;
+  letter-spacing: 7px;
+  z-index: 2;
+  animation: reveal-up 0.7s forwards;
+  animation-delay: 1.5s;
+  -webkit-animation: reveal-up 0.7s forwards;
+  -webkit-animation-delay: 1.5s;
+}
+
+.desc {
+  font-family: 'PlaylistScript';
+  opacity: 0;
+  position: relative;
+  font-size: 40px;
+  z-index: 2;
+  animation: reveal-up 0.7s forwards;
+  animation-delay: 2s;
+  -webkit-animation: reveal-up 0.7s forwards;
+  -webkit-animation-delay: 2s;
+}
+
+@keyframes reveal-up {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes reveal-up {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*.css-typing {
+  width: 30em;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: type 5s steps(50, end);
+  animation: type 5s steps(50, end);
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  from {
+    width: 0;
+  }
+}*/
+
+/*.side-image {
+  width: 350px;
+  height: 100%;
+}*/
