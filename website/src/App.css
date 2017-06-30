@@ -6,18 +6,20 @@
 }
 
 .arrow {
+  display: block;
   position: relative;
   top: 85%;
-  left: 35%;
+  left: 48.2%;
 }
 
 .arrow-text {
+  display: block;
   color: white;
   font-family: 'Vegur';
   font-size: 15px;
   position: relative;
   top: 85%;
-  left: 35%;
+  left: 34.3%;
 }
 .arrow:hover .arrow-text {
   color: pink;

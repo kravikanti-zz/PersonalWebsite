@@ -25,7 +25,7 @@ class App extends Component {
             src={downarrow}
             onClick={() => this.scrollToAbout()}
           />
-          <div className="arrow-text hover">Learn More</div>
+          <span className="arrow-text hover">Learn More</span>
         </div>
 
         <div className="about-container">
