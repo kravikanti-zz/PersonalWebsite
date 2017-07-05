@@ -5,24 +5,26 @@
   height: 100vh;
 }
 
-.arrow {
-  display: block;
+.scroll-wrapper {
   position: relative;
   top: 85%;
   left: 48.2%;
 }
 
-.arrow-text {
+#arrow {
   display: block;
+}
+
+#arrow-text {
+  display: block;
+  visibility: hidden;
   color: white;
   font-family: 'Vegur';
   font-size: 15px;
-  position: relative;
-  top: 85%;
-  left: 34.3%;
 }
-.arrow:hover .arrow-text {
-  color: pink;
+#arrow:hover #arrow-text {
+  color: blue;
+  visibility: visible;
 }
 
 .main-overlay {
@@ -120,6 +122,9 @@
   font-family: 'Vegur';
   width: 100%;
   margin: 0 auto;
+  padding-bottom: 20vmin;
+  position: relative;
+  z-index: -2;
 }
 
 .about-content {
@@ -161,4 +166,82 @@
   display: inline-block;
   z-index: 1;
   /*margin: 0 2em;*/
+}
+
+.outer-skills-container {
+  background: #0f5473 center;
+  width: 100%;
+  margin: 0 auto;
+  /*top right bottom left*/
+}
+
+.inner-skills-container {
+  background: lightblue center;
+  width: 95%;
+  margin: 0 auto;
+  /*margin-left: 10px;
+  margin-right: 10px;*/
+}
+
+.outer-skills-container:before {
+  background: #0f5473;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 20vmin;
+  transform: skewY(-4deg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10vmin;
+  z-index: -2;
+}
+
+.inner-skills-container:before {
+  background: lightblue center;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 20vmin;
+  transform: skewY(-4deg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10vmin;
+  z-index: -1;
+}
+
+.outer-skills-container:after {
+  background: #0f5473;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 20vmin;
+  transform: skewY(4deg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10vmin;
+  z-index: -2;
+}
+
+.inner-skills-container:after {
+  background: lightblue center;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 20vmin;
+  transform: skewY(4deg);
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -10vmin;
+  z-index: -1;
+}
+
+.skills-heading {
+  font-family: 'PlaylistScript';
+  font-size: 4em;
+  padding: 0 50px;
+}
+
+.skills-content {
+  font-family: 'Vegur';
+  font-size: 1.3em;
 }

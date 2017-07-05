@@ -14,20 +14,25 @@ class App extends Component {
   render() {
     return (
       <div>
+        {/* Main Page */}
         <div className="home-container">
           <div className="main-overlay">
             <h1 className="name"> KAVYA RAVIKANTI </h1>
             <div className="desc"> Software Developer</div>
           </div>
-
-          <img
-            className="arrow"
-            src={downarrow}
-            onClick={() => this.scrollToAbout()}
-          />
-          <span className="arrow-text hover">Learn More</span>
+          <div className="scroll-wrapper">
+            <img
+              id="arrow"
+              src={downarrow}
+              onClick={() => this.scrollToAbout()}
+            />
+            <span id="arrow-text" className="hover">
+              Learn More
+            </span>
+          </div>
         </div>
 
+        {/* About Page */}
         <div className="about-container">
           <div className="heading"> Hey, I'm Kavya.</div>
           <div className="about-content">
@@ -52,6 +57,14 @@ class App extends Component {
               </p>
             </div>
             <img className="about-image" src={sittingme} />
+          </div>
+        </div>
+
+        {/* Skills Page */}
+        <div className="outer-skills-container">
+          <div className="inner-skills-container">
+            <div className="skills-heading"> Skills </div>
+            <div className="skills-content">These are my skills</div>
           </div>
         </div>
       </div>
