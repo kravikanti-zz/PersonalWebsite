@@ -62,10 +62,19 @@ class App extends Component {
 
         {/* Skills Page */}
         <div className="outer-skills-container">
-          <div className="inner-skills-container">
-            <div className="skills-heading"> Skills </div>
-            <div className="skills-content">These are my skills</div>
+          {/* <div className="inner-skills-container"> */}
+          <div className="skills-heading"> Skills </div>
+          <div className="skills-content">
+            <div className="skills-title">Development</div>
+            <ul className="skills-list">
+              <li className="dev-skill">JavaScript</li>
+              <li className="dev-skill">Node.js</li>
+              <li className="dev-skill">HTML</li>
+              <li className="dev-skill">CSS</li>
+              <li className="dev-skill">React.js</li>
+            </ul>
           </div>
+          {/* </div> */}
         </div>
       </div>
     );
