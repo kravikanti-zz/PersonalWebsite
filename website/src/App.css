@@ -270,6 +270,22 @@
   margin: 10px;
 }
 
+.dev-skill span {
+  display: none;
+}
+
+.dev-skill:hover svg {
+  display: none;
+}
+
+.dev-skill:hover img {
+  display: none;
+}
+
+.dev-skill:hover span {
+  display: inline-block;
+}
+
 .github-icon {
   width: 75px;
 }
