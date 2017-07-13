@@ -237,6 +237,7 @@
   font-family: 'PlaylistScript';
   font-size: 4em;
   padding: 0 50px;
+  color: white;
 }
 
 .skills-content {
@@ -245,23 +246,38 @@
 }
 
 .skills-title {
+  color: white;
+  margin: 0 50px;
+  font-size: 1.3em;
+}
+
+.dev-icon {
+  width: 45px;
+  vertical-align: middle;
+  margin: 0 10px;
 }
 
 .skills-list {
   list-style: none;
+  padding: 0 50px;
 }
 
 .dev-skill {
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
+  color: white;
+  display: inline-block;
+  margin: 10px;
+}
+
+.github-icon {
+  width: 75px;
+}
+
+/* .dev-skill:hover {
   border: 1px solid white;
-  color: white;
 }
 
-.skill-icon {
-  color: white;
-}
-
-.dev-skill:hover {
-  background: pink;
-}
+.dev-skill:hover svg {
+  display: none;
+} */
