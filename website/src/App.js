@@ -167,6 +167,10 @@ class App extends Component {
             </ul>
           </div>
         </div>
+
+        <div className="exp-section"> 
+        <div className="exp-heading"> Experience </div>
+        </div>
       </div>
     );
   }
