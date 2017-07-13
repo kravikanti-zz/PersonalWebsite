@@ -243,6 +243,7 @@
 .skills-content {
   font-family: 'Vegur';
   font-size: 1.3em;
+  display: inline-block;
 }
 
 .skills-title {
@@ -260,6 +261,7 @@
 .skills-list {
   list-style: none;
   padding: 0 50px;
+
 }
 
 .dev-skill {
@@ -268,13 +270,14 @@
   color: white;
   display: inline-block;
   margin: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
 .dev-skill span {
   display: none;
 }
 
-.dev-skill:hover svg {
+/*.dev-skill:hover svg {
   display: none;
 }
 
@@ -284,16 +287,8 @@
 
 .dev-skill:hover span {
   display: inline-block;
-}
+}*/
 
 .github-icon {
   width: 75px;
 }
-
-/* .dev-skill:hover {
-  border: 1px solid white;
-}
-
-.dev-skill:hover svg {
-  display: none;
-} */
