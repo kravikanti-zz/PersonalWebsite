@@ -394,13 +394,430 @@
 .exp-container {
   font-family: 'Vegur';
   width: 100%;
-  height: 100vh;
-  margin: 0.4em;
+  /*margin: 0.4em;*/
   padding: 10px;
+  background-color: #00141D
 }
 
 .exp-heading {
   font-family: 'PlaylistScript';
   font-size: 4em;
   text-align: center;
+  color: white;
+}
+
+#experience-section .experience-description {
+  padding: 0 100px;
+  font-size: 1.2em;
+}
+@media only screen and (max-width: 1170px) {
+  #experience-section .experience-description {
+    padding: 0;
+  }
+}
+#experience-section .experience-description a {
+  display: inline-block;
+  position: relative;
+  font-weight: 500;
+  transition: all .3s ease;
+}
+#experience-section .experience-description a:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  border-width: 0 0 .5px;
+  border-style: solid;
+  border-color: #f2f2f2;
+  transition: all .3s ease;
+}
+#experience-section .experience-wrapper {
+  padding: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper {
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #experience-section .experience-wrapper {
+    padding: 30px 0;
+  }
+}
+#experience-section .experience-wrapper #timeline {
+  position: relative;
+  padding: 2em 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#experience-section .experience-wrapper #timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  height: 100%;
+  width: 2px;
+  background: rgba(15, 84, 115, 1);
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline:before {
+    left: 20px;
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline:before {
+    left: 10px;
+  }
+}
+#experience-section .experience-wrapper #timeline:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#experience-section .experience-wrapper #timeline .timeline-block {
+  position: relative;
+  transition: all .3s ease;
+  margin: 1em 0;
+}
+#experience-section .experience-wrapper #timeline .timeline-block:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#experience-section .experience-wrapper #timeline .timeline-block:first-child {
+  margin-top: 0;
+}
+#experience-section .experience-wrapper #timeline .timeline-block:last-child {
+  margin-bottom: 0;
+}
+@media only screen and (max-width: 1170px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content {
+  float: left;
+}
+@media only screen and (max-width: 1170px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content {
+    right: 10px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content {
+    right: auto;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content:before {
+  top: 24px;
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #1b1b1b;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content:before {
+    top: 16px;
+    left: auto;
+    border-color: transparent;
+    border-right-color: #1b1b1b;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block:nth-child(odd) .timeline-content .date {
+  left: auto;
+  text-align: right;
+  right: -33%;
+}
+#experience-section .experience-wrapper #timeline .timeline-block:nth-child(even) .date {
+  text-align: right;
+  left: auto;
+  right: 55%;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(even) .date {
+    text-align: left;
+    font-size: 14px;
+    color: #777;
+    position: relative;
+    top: -40px;
+    left: 95px;
+    right: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block:nth-child(even) .date {
+    left: 66px;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 15px;
+  left: 50%;
+  margin-left: -25px;
+  border-radius: 50%;
+  background: #212121;
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all .3s ease;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
+    top: 5px;
+    left: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-img {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    left: 15px;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -12px;
+  margin-top: -12px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite {
+    width: 20px;
+    height: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.university {
+  background-image: url(./images/graduate-cap.svg);
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.research {
+  background-image: url(./images/graduate-cap.svg);
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.industry {
+  background-image: url(./images/graduate-cap.svg);
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.academic {
+  background-image: url(./images/graduate-cap.svg);
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
+  float: right;
+  position: relative;
+  background: #d6d7db;
+  border-radius: 3px;
+  margin-left: 0;
+  padding: 1.5em;
+  width: 45%;
+  opacity: .85;
+  transition: all .3s ease;
+}
+@media only screen and (max-width: 1170px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
+    left: 0;
+    padding-bottom: 2.5em;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
+    margin-left: 70px;
+    right: auto;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
+    margin-left: 50px;
+    padding: 1.5em 1em 2.5em;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:focus,
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:hover {
+  opacity: 1;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:focus
+  + .timeline-img,
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:hover
+  + .timeline-img {
+  background: rgba(15, 84, 115, 1);
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:before {
+  content: '';
+  position: absolute;
+  top: 24px;
+  right: 100%;
+  height: 0;
+  width: 0;
+  border: 15px solid transparent;
+  border-color: transparent;
+  border-right-color: #1b1b1b;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content:before {
+    top: 16px;
+    right: 100%;
+    left: auto;
+    border: 15px solid transparent;
+    border-right: 15px solid #1b1b1b;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .position {
+  color: black;
+  margin: 5px 0 10px;
+  font-size: 18px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Vegur';
+  font-weight: bold;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .company {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .company a {
+  color: red;
+  display: inline;
+  transition: all .3s ease;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .company a:focus,
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .company a:hover {
+  color: yellow;
+}
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-content .job-desc {
+  margin: 1em 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .timeline-content .job-desc {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+}
+#experience-section .experience-wrapper #timeline .timeline-block .date {
+  font-size: 1em;
+  font-weight: 500;
+  display: inline-block;
+  color: #f2f2f2;
+  font-family: 'Vegur';
+  text-transform: uppercase;
+  position: absolute;
+  width: 100%;
+  left: 55%;
+  top: 30px;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .date {
+    font-size: 14px;
+    color: #777;
+    position: absolute;
+    top: auto;
+    bottom: 20px;
+    left: 95px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .experience-wrapper #timeline .timeline-block .date {
+    left: 66px;
+  }
+}
+#experience-section .down-arrow {
+  display: block;
+  margin: 0 auto;
+  border-color: transparent;
+  border-top-color: rgba(15, 84, 115, 1);
+  border-style: solid;
+  border-width: 15px 7px 0;
+  width: 0;
+  height: 0;
+  position: relative;
+  line-height: 0;
+}
+@media only screen and (max-width: 1000px) {
+  #experience-section .down-arrow {
+    margin-left: 13.5px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #experience-section .down-arrow {
+    margin-left: 3.5px;
+  }
+}
+
+.block-btn {
+  display: block;
+  width: 100%;
+  min-height: 100px;
+  overflow: hidden;
+  color: #f2f2f2;
+  position: relative;
+  background: #00909c;
+  font-family: 'Vegur';
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: background-color .5s linear;
+}
+.block-btn:focus,
+.block-btn:hover {
+  background: #00b7c7;
+  transition: all .3s ease;
+}
+.block-btn:focus .text,
+.block-btn:hover .text {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate3D(0, 4em, 0) scale(.25);
+}
+.block-btn:focus .icon,
+.block-btn:hover .icon {
+  opacity: 1;
+  visibility: visible;
+  transform: translate3D(0, 0, 0) scale(1);
+}
+.block-btn .icon,
+.block-btn .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.block-btn .text {
+  margin: 40px auto;
+  opacity: 1;
+  visibility: visible;
+  transition: transform .4s cubic-bezier(.425, -.195, .005, 1.215),
+    opacity .13333s linear;
+  transform: scale(1);
+}
+.block-btn .icon {
+  width: 50px;
+  margin: 25px auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .4s cubic-bezier(.425, -.195, .005, 1.215),
+    opacity .4s linear;
+  transform: translate3D(0, -4em, 0) scale(0);
 }
