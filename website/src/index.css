@@ -11,6 +11,11 @@
   src: url(./fonts/PlaylistScript.otf);
 }
 
+@font-face {
+  font-family: PlaylistCaps;
+  src: url(./fonts/PlaylistCaps.otf);
+}
+
 body {
   margin: 0;
   padding: 0;
