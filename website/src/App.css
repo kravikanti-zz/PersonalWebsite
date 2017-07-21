@@ -217,6 +217,30 @@
   z-index: -2;
 }
 
+.about-container:before {
+  background: #0f5473 center;
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 500px;
+  transform: skewY(15deg);
+  margin-top: -30vmin;
+  z-index: -4;
+}
+
+.about-container:after {
+  background: #002231 center;
+  position: absolute;
+  left: -150px;
+  top: 0;
+  content: "";
+  width: 350px;
+  height: 100%;
+  transform: skewX(-30deg);
+  z-index: -5;
+}
+
 .about-content {
   width: 100%;
   display: flex;
@@ -239,6 +263,7 @@
   padding: 0.4em;
   font-size: 4em;
   text-align: center;
+  color: white;
 }
 
 .about-desc {
@@ -260,19 +285,8 @@
   /*margin: 0 2em;*/
 }
 
-.outer-skills-container {
-  background-image: url(./images/code.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-.inner-skills-container {
-  background-color: rgba(15, 84, 115, 0.6);
-  height: 100%;
-  margin: 0 auto;
+.skills-container {
+  background: #0f5473;
 }
 
 /*.outer-skills-container:before {
@@ -352,8 +366,11 @@
 
 .skills-title {
   color: white;
-  margin: 0 50px;
+  margin: 0em 1em;
+  padding-bottom: 1em;
+  padding-right: 0.6em;
   font-size: 1.3em;
+  border-bottom: 2px #d6d7db solid;
 }
 
 .dev-icon {
@@ -364,7 +381,7 @@
 
 .skills-list {
   list-style: none;
-  padding: 0 50px;
+  padding: 0 1em;
 }
 
 .dev-skill {
@@ -399,6 +416,37 @@
   width: 75px;
 }
 
+/* Portfolio Section Styling */
+
+.passion-outer-container {
+  background-image: url(./images/code.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.passion-inner-container {
+  background-color: rgba(15, 84, 115, 0.3);
+  height: 100%;
+  margin: 0 auto;
+}
+
+.passion-heading {
+  font-family: 'PlaylistScript';
+  font-size: 4em;
+  text-align: center;
+  color: white;
+  padding: 0.4em;
+}
+
+.passion-context {
+  color: white;
+}
+
+/* Experience Page Styling */
+
 .exp-container {
   font-family: 'Vegur';
   width: 100%;
@@ -410,6 +458,7 @@
   font-size: 4em;
   text-align: center;
   color: white;
+  padding: 0.4em;
 }
 
 #experience-section .experience-description {
@@ -439,17 +488,20 @@
   transition: all .3s ease;
 }
 #experience-section .experience-wrapper {
-  padding: 4em;
+  padding-top: 1.4em;
+  padding-right: 4em;
+  padding-left: 4em;
+  padding-bottom: 4em;
 }
 @media only screen and (max-width: 1000px) {
   #experience-section .experience-wrapper {
-    padding-left: 0;
+    padding-left: 1.4em;
   }
 }
 @media only screen and (max-width: 600px) {
   #experience-section .experience-wrapper {
-    padding: 30px 0;
-    margin-left: -100px;
+    padding: 1.2em;
+    width: 90%;
   }
 }
 #experience-section .experience-wrapper #timeline {
@@ -610,15 +662,15 @@
 #experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.university {
   background-image: url(./images/graduate-cap.svg);
 }
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.research {
-  background-image: url(./images/graduate-cap.svg);
+#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.ta {
+  background-image: url(./images/notebook.svg);
 }
 #experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.industry {
-  background-image: url(./images/graduate-cap.svg);
+  background-image: url(./images/briefcase.svg);
 }
-#experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.academic {
+/* #experience-section .experience-wrapper #timeline .timeline-block .timeline-img .sprite.academic {
   background-image: url(./images/graduate-cap.svg);
-}
+} */
 #experience-section .experience-wrapper #timeline .timeline-block .timeline-content {
   float: right;
   position: relative;
@@ -787,7 +839,7 @@
 }
 .block-btn:focus,
 .block-btn:hover {
-  background: #167aa7;
+  background: #464646;
   transition: all .3s ease;
 }
 .block-btn:focus .text,
@@ -826,4 +878,197 @@
   transition: transform .4s cubic-bezier(.425, -.195, .005, 1.215),
     opacity .4s linear;
   transform: translate3D(0, -4em, 0) scale(0);
+}
+
+/* Nav Bar for Small Screen CSS */
+
+#toggle {
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  height: 27px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+  display: none;
+  transition: opacity .25s ease;
+}
+@media only screen and (max-width: 768px) {
+  #toggle {
+    display: block;
+  }
+}
+#toggle:focus,
+#toggle:hover {
+  opacity: .7;
+}
+#toggle:active .line {
+  background: #f2f2f2;
+}
+#toggle:active .top {
+  transform: translateY(10px) translateX(0) rotate(45deg);
+}
+#toggle:active .middle {
+  opacity: 0;
+}
+#toggle:active .bottom {
+  transform: translateY(-10px) translateX(0) rotate(-45deg);
+}
+#toggle .line {
+  background: #f2f2f2;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .35s ease;
+}
+#toggle .line.middle {
+  top: 10px;
+}
+#toggle .line.bottom {
+  top: 20px;
+}
+.overlay {
+  position: fixed;
+  background: rgba(0, 183, 199, .95);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: 10;
+  transition: all .3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .overlay.open {
+    height: 100%;
+    z-index: 10;
+    opacity: 1;
+    visibility: visible;
+    overflow: hidden;
+  }
+  .overlay.open .menu-item {
+    animation: fadeInTop .5s ease forwards;
+    animation-delay: .35s;
+  }
+  .overlay.open .menu-item:nth-of-type(2) {
+    animation-delay: .4s;
+  }
+  .overlay.open .menu-item:nth-of-type(3) {
+    animation-delay: .45s;
+  }
+  .overlay.open .menu-item:nth-of-type(4) {
+    animation-delay: .5s;
+  }
+  .overlay.open .menu-item:nth-of-type(5) {
+    animation-delay: .55s;
+  }
+  .overlay.open .menu-item:nth-of-type(6) {
+    animation-delay: .6s;
+  }
+  .overlay.open .menu-item:nth-of-type(7) {
+    animation-delay: .65s;
+  }
+}
+.overlay .logo {
+  color: #f2f2f2;
+  font-family: 'Vegur';
+  font-size: 30px;
+  margin: 14px 20px;
+}
+@media only screen and (max-width: 400px) {
+  .overlay .logo {
+    font-size: 24px;
+    margin: 17px 20px;
+  }
+}
+.overlay .logo .logo-img {
+  width: 35px;
+  margin-right: 10px;
+  position: relative;
+  top: 5px;
+}
+@media only screen and (max-width: 400px) {
+  .overlay .logo .logo-img {
+    width: 30px;
+    top: 5px;
+  }
+}
+.overlay .overlay-menu {
+  position: relative;
+  height: 70%;
+  transform: translateY(-50%);
+  top: 45%;
+  font-size: 1.5em;
+  font-family: 'Vegur';
+  font-weight: 700;
+  text-align: center;
+}
+.overlay .overlay-menu .menu-container {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+}
+.overlay .overlay-menu .menu-container .menu-item {
+  display: block;
+  height: 14.25%;
+  height: calc(100% / 7);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+}
+.overlay .overlay-menu .menu-container .menu-item a {
+  position: relative;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.overlay .overlay-menu .menu-container .menu-item a:after,
+.overlay .overlay-menu .menu-container .menu-item a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 50%;
+  background: #f2f2f2;
+  margin-top: -2px;
+  left: -3px;
+}
+.overlay .overlay-menu .menu-container .menu-item a:after {
+  transition: width .7s cubic-bezier(.22, .61, .36, 1);
+}
+.overlay .overlay-menu .menu-container .menu-item a:focus:after,
+.overlay .overlay-menu .menu-container .menu-item a:focus:before,
+.overlay .overlay-menu .menu-container .menu-item a:hover:after,
+.overlay .overlay-menu .menu-container .menu-item a:hover:before {
+  width: 105%;
+}
+.overlay .overlay-menu .menu-container .menu-item a:focus:before,
+.overlay .overlay-menu .menu-container .menu-item a:hover:before {
+  transition: width .5s cubic-bezier(.22, .61, .36, 1);
+}
+.overlay .overlay-menu .menu-container .menu-item a:focus:after,
+.overlay .overlay-menu .menu-container .menu-item a:hover:after {
+  background: 0 0;
+  transition: 0s;
+}
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    bottom: 20%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
 }
