@@ -7,6 +7,11 @@
 }
 
 @font-face {
+  font-family: VegurLite;
+  src: url(./fonts/VegurLite.otf);
+}
+
+@font-face {
   font-family: PlaylistScript;
   src: url(./fonts/PlaylistScript.otf);
 }

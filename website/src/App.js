@@ -1,14 +1,15 @@
 import React, { Component } from "react";
 import "./App.css";
 import sittingme from "./images/sittingme.jpg";
-import downarrow from "./images/down-arrow.png";
+import downarrow from "./images/icons/down-arrow.png";
 import scrollToElement from "scroll-to-element";
-import devicon from "./images/pc-settings.svg";
-import tools from "./images/tools.svg";
-import github from "./images/github-logo.svg";
-import cli from "./images/command-lines.svg";
-import r from "./images/r-logo.svg";
-import download from "./images/download.svg";
+import devicon from "./images/icons/pc-settings.svg";
+import tools from "./images/icons/tools.svg";
+import github from "./images/icons/github-logo.svg";
+import cli from "./images/icons/command-lines.svg";
+import r from "./images/icons/r-logo.svg";
+import download from "./images/icons/download.svg";
+import developer from "./images/icons/programming.svg";
 
 class App extends Component {
   scrollToIntro = () => {
@@ -301,12 +302,38 @@ class App extends Component {
               <div className="heading">What I Do</div>
               <div className="content">
                 <div className="card">
-                  <div className="title">Developer</div>
-                  <div className="body">jhdfkjdhkjdf</div>
+                  <div className="title">
+                    {<img className="icon" src={developer} />}
+                    Developer
+                  </div>
+                  <div className="body">
+                    I have a passion for creating and developing strong pieces
+                    of software whether a website or a mobile app that is both
+                    functional and beautiful.
+                  </div>
                 </div>
-                <div className="card">Designer</div>
-                <div className="card">Trail Blazer</div>
-                <div className="card">EDIT</div>
+                <div className="card">
+                  <div className="title">
+                    {<img className="icon" src={developer} />}
+                    Designer
+                  </div>
+                  <div className="body">
+                    I strive to implement aesthetically pleasing interfaces for
+                    websites or apps that are responsive.
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="title">
+                    {<img className="icon" src={developer} />}
+                    EDIT
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="title">
+                    {<img className="icon" src={developer} />}
+                    EDIT
+                  </div>
+                </div>
               </div>
             </div>
           </div>
