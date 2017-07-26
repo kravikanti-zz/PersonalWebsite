@@ -146,6 +146,40 @@
   float: right;
 }
 
+@media only screen and (max-width: 1000px) {
+  .main-overlay::before {
+    height: 20vmin;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-overlay {
+    height: 40vmin;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main-overlay::before {
+    height: 15vmin;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-overlay {
+    width: 80%;
+    float: none;
+    margin-top: 0;
+    right: 0;
+    top: 30%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .main-overlay::before {
+    display: none;
+  }
+}
+
 @-webkit-keyframes slide {
   100% {
     right: 0;
@@ -182,6 +216,20 @@
   animation-delay: 2s;
   -webkit-animation: reveal-up 0.7s forwards;
   -webkit-animation-delay: 2s;
+}
+
+@media only screen and (max-width: 550px) {
+  .name {
+    font-size: 2.2em;
+    padding: 15px;
+    letter-spacing: 5px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .desc {
+    font-size: 1em;
+  }
 }
 
 @keyframes reveal-up {
