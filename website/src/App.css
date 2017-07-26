@@ -242,7 +242,7 @@
 }
 
 .about-content {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   justify-content: center;
 }
@@ -272,6 +272,8 @@
 
 .about-text {
   margin: 10px 50px 0 50px;
+  font-family: 'VegurLite';
+  line-height: 150%;
 }
 
 .about-image {
@@ -284,15 +286,16 @@
   /*margin: 0 2em;*/
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   .about-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    margin: auto 10vmin;
+    align-items: center;
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
   .about-overlay {
     order: 2;
     width: 80%;
@@ -300,7 +303,46 @@
   }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
+  .about-image {
+    order: 1;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image-wrapper {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-content {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-overlay {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-desc {
+    margin: 10px 20px 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-text {
+    margin: 10px 20px 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
   .about-image {
     order: 1;
     width: 200px;
