@@ -473,6 +473,9 @@ class App extends Component {
             <img className="icon" src={download} />
           </a>
         </div>
+        <div>Portfolio Container</div>
+        <div>Contact Me</div>
+        <div>Footer Bar with Social Media Icons</div>
       </div>
     );
   }
