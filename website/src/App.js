@@ -10,6 +10,8 @@ import cli from "./images/icons/command-lines.svg";
 import r from "./images/icons/r-logo.svg";
 import download from "./images/icons/download.svg";
 import developer from "./images/icons/programming.svg";
+import pakaIphone from "./images/paka-iphone.jpg";
+import pakaDesktop from "./images/paka-desktop.jpg";
 
 class App extends Component {
   scrollToIntro = () => {
@@ -473,9 +475,44 @@ class App extends Component {
             <img className="icon" src={download} />
           </a>
         </div>
-        <div>Portfolio Container</div>
-        <div>Contact Me</div>
-        <div>Footer Bar with Social Media Icons</div>
+        <div id="portfolio" className="port-container">
+          <div className="heading">Past Projects</div>
+          <div className="body">
+            <div className="project-row">
+              <div className="image-container">
+                {/* <img className="desktop" src={pakaIphone} />
+                <img className="tablet" src={pakaIphone} />
+                <img className="iphone" src={pakaIphone} /> */}
+                <img className="desktop" src={pakaDesktop} />
+              </div>
+              <div className="description">
+                Description of Project Goes Here
+              </div>
+              <div className="title-row">
+                <h1 className="title">Paka PreLaunch</h1>
+                <div className="buttons">
+                  <button clasName="button">Demo</button>
+                  <button clasName="button">Code</button>
+                </div>
+              </div>
+            </div>
+            <div className="project-row">
+              <div className="image">Picture Goes Here</div>
+              <div className="description">
+                Description of Project Goes Here
+              </div>
+              <div className="title-row">
+                <h1 className="title">Project 2 Title</h1>
+                <div className="buttons">
+                  <button clasName="button">Demo</button>
+                  <button clasName="button">Code</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div>Contact Me</div>
+        <div>Footer Bar with Social Media Icons</div> */}
       </div>
     );
   }
