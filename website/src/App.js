@@ -10,8 +10,9 @@ import cli from "./images/icons/command-lines.svg";
 import r from "./images/icons/r-logo.svg";
 import download from "./images/icons/download.svg";
 import developer from "./images/icons/programming.svg";
-import pakaIphone from "./images/paka-iphone.jpg";
-import pakaDesktop from "./images/paka-desktop.jpg";
+import paka from "./images/paka.png";
+import pakaadmin from "./images/pakaadmin.png";
+import travelplanner from "./images/travelPlanner.png";
 
 class App extends Component {
   scrollToIntro = () => {
@@ -275,6 +276,11 @@ class App extends Component {
               </span>
               <ul className="skills-list">
                 <li className="dev-skill">
+                  <img className="github-icon" src={cli} />
+                  <span>Command Line</span>
+                </li>
+
+                <li className="dev-skill">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
                     <path
                       fill="#ffffff"
@@ -287,11 +293,6 @@ class App extends Component {
                 <li className="dev-skill">
                   <img className="github-icon" src={github} />
                   <span>Github</span>
-                </li>
-
-                <li className="dev-skill">
-                  <img className="github-icon" src={cli} />
-                  <span>Command Line</span>
                 </li>
               </ul>
             </div>
@@ -478,35 +479,103 @@ class App extends Component {
         <div id="portfolio" className="port-container">
           <div className="heading">Past Projects</div>
           <div className="body">
+            {/* Prelaunch Project */}
             <div className="project-row">
-              <div className="image-container">
-                {/* <img className="desktop" src={pakaIphone} />
-                <img className="tablet" src={pakaIphone} />
-                <img className="iphone" src={pakaIphone} /> */}
-                <img className="desktop" src={pakaDesktop} />
-              </div>
-              <div className="description">
-                Description of Project Goes Here
-              </div>
               <div className="title-row">
                 <h1 className="title">Paka PreLaunch</h1>
                 <div className="buttons">
-                  <button clasName="button">Demo</button>
+                  <button clasName="button">
+                    <a href="https://admin.pakaprelaunch.com/" target="_blank">
+                      Demo
+                    </a>
+                  </button>
                   <button clasName="button">Code</button>
                 </div>
               </div>
+              <div className="image-container">
+                <img className="desktop" src={paka} />
+              </div>
+              <div className="description">
+                Prelaunch website for PAKA merchandise for company to college
+                potential customer information and run a referral campaign. Lead
+                a team of 6 to build prelaunch website from ground up using
+                React.js and Google Firebase database to store and collect
+                customer data. Also used OAuth 2.0 security authorization
+                framework to secure data and implement authentication.
+              </div>
+              <div className="used">
+                <ul className="used-items">
+                  <li className="used-item">React.js</li>
+                  <li className="used-item">CSS</li>
+                  <li className="used-item">Ant Design UI</li>
+                  <li className="used-item">Firebase</li>
+                </ul>
+              </div>
             </div>
+
+            {/* Admin Project */}
             <div className="project-row">
-              <div className="image">Picture Goes Here</div>
+              <div className="title-row">
+                <h1 className="title">Paka Admin Dashboard</h1>
+                <div className="buttons">
+                  <button clasName="button">
+                    <a href="https://admin.pakaprelaunch.com/" target="_blank">
+                      Demo
+                    </a>
+                  </button>
+                  <button clasName="button">Code</button>
+                </div>
+              </div>
+              <div className="image-container">
+                <img className="desktop" src={pakaadmin} />
+              </div>
+              <div className="description">
+                Admin Dashboard for PAKA adminstrators to access customer data
+                and view stats. Used React.js and Google Firebase database to
+                access data collected from prelaunch campaign website. Used
+                OAuth 2.0 as the authorization framework and used ReChartLine to
+                create data visualization features.
+              </div>
+              <div className="used">
+                <ul className="used-items">
+                  <li className="used-item">React.js</li>
+                  <li className="used-item">CSS</li>
+                  <li className="used-item">Ant Design UI</li>
+                  <li className="used-item">Firebase</li>
+                  <li className="used-item">Data Visualization</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="project-row">
+              <div className="title-row">
+                <h1 className="title">travelPlanner</h1>
+                <div className="buttons">
+                  <button clasName="button">
+                    <a
+                      href="https://travelshareproject.firebaseapp.com/#/"
+                      target="_blank"
+                    >
+                      Demo
+                    </a>
+                  </button>
+                  <button clasName="button">Code</button>
+                </div>
+              </div>
+              <div className="image">
+                <img className="desktop" src={travelplanner} />
+              </div>
               <div className="description">
                 Description of Project Goes Here
               </div>
-              <div className="title-row">
-                <h1 className="title">Project 2 Title</h1>
-                <div className="buttons">
-                  <button clasName="button">Demo</button>
-                  <button clasName="button">Code</button>
-                </div>
+              <div className="used">
+                <ul className="used-items">
+                  <li className="used-item">React.js</li>
+                  <li className="used-item">CSS</li>
+                  <li className="used-item">Firebase</li>
+                  <li className="used-item">Google Authentication</li>
+                  <li className="used-item">Material UI</li>
+                </ul>
               </div>
             </div>
           </div>

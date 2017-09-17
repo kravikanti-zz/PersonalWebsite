@@ -1096,13 +1096,12 @@
 }
 
 #portfolio .body {
-  margin: 30px;
+  margin: 30px 150px;
   font-family: 'Vegur';
 }
 
 #portfolio .project-row {
-  border: hotpink solid 5px;
-  margin: 0px 0px 20px 0px;
+  margin: 0px 0px 60px 0px;
 }
 
 #portfolio .image-container {
@@ -1111,26 +1110,18 @@
 }
 
 #portfolio .desktop {
-  background: pink;
-  width: 40%;
-  /* display: inline-block; */
-}
-
-#portfolio .tablet {
-  background: green;
-  width: 30%;
-  /* display: inline-block; */
-}
-
-#portfolio .iphone {
-  width: 20%;
-  /* display: inline-block; */
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #portfolio .description {
   font-family: 'VegurLite';
-  font-size: 14px;
+  font-size: 17px;
   display: inline-block;
+  padding: 10px 0px;
+  line-height: 175%;
 }
 
 #portfolio .title-row {
@@ -1139,11 +1130,10 @@
   justify-content: space-between;
   align-items: center;
   color: #002231;
-  padding: 10px 20px;
 }
 
 #portfolio .title {
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
 }
 
@@ -1160,7 +1150,56 @@
   margin: 0 5px 0 5px;
   cursor: pointer;
   background: none;
-  font-size: 14px;
+  font-size: 17px;
+}
+
+#portfolio a {
+  text-decoration: none;
+}
+
+#portfolio a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+}
+
+#portfolio .used {
+  display: block;
+  width: 90%;
+  font-family: Gotham, Helvetica, Arial, sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  #portfolio .used {
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #portfolio .used {
+    margin-bottom: 50px;
+  }
+}
+#portfolio .used .used-items {
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 660px) {
+  #portfolio .used .used-items {
+    margin-left: 0;
+  }
+}
+#portfolio .used .used-items .used-item {
+  display: inline-block;
+  padding: 7px 7px 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: white;
+  background: #0f5473;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .5px;
 }
 
 /* Nav Bar for Small Screen CSS */
